@@ -1387,8 +1387,8 @@
         }
       }
 
-      canvasWidth = scaledWidth || originalWidth;
-      canvasHeight = scaledHeight || originalHeight;
+      canvasWidth = Math.round(scaledWidth || originalWidth);
+      canvasHeight = Math.round(scaledHeight || originalHeight);
 
       canvas = $('<canvas>')[0];
       canvas.width = canvasWidth;
